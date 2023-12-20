@@ -6,12 +6,12 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <div className="bg-chef">
+    <>
       <NavBarTop />
       <RoutesDom />
       <FloatButton />
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -84,13 +84,12 @@ export default function Carusel() {
               style={{
                 flexShrink: 0,
                 position: "absolute",
-                left: `calc(50% - 15%)`,
-                marginLeft:
+                left:
                   index === currentIndex
-                    ? "0%"
+                    ? "50%"
                     : index === (currentIndex + 1) % data.length
-                    ? "10%"
-                    : "-10%",
+                    ? "30%"
+                    : "10%",
               }}
             >
               {item}

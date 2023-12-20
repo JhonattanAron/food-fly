@@ -1,6 +1,6 @@
 export default function FloatButton() {
   return (
-    <div className="absolute bottom-0 right-0 mb-4 mr-4 z-10">
+    <div className="fixed z-50 bottom-0 right-0 mb-4 mr-4">
       <div>
         <a
           title="Follow me on twitter"
