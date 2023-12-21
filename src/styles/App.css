@@ -7,3 +7,9 @@
     object-fit: cover;
     backdrop-filter: blur(5px); 
 }
+@media (max-width: 1024px) {
+    .absolute-min {
+        position: absolute ;
+    }
+}
+

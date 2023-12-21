@@ -5,12 +5,10 @@ function FeaturesHome() {
   return (
     <div class="relative p-4 px-4 w-auto bg-black sm:px-6 lg:px-8 py-26">
       <div class="relative">
-        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div class="lg:grid lg:grid-flow-row-dense lg:mt-8 lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="ml-auto lg:col-start-2 lg:max-w-2xl">
-            <p class="text-7xl mb-10 font-bold leading-6 text-red-400 uppercase">
-              Quito <br /> <br />
-              <br />
-              Food Fly
+            <p class="text-7xl mb-10 font-bold  text-red-400 uppercase">
+              Quito Food Fly
             </p>
             <h4 class="mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
               Te Ofrecemos{" "}

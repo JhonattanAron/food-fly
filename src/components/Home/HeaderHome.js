@@ -2,7 +2,7 @@ export default function HeaderHome() {
   return (
     <div className="mt-15 pb-10 bg-chef">
       <div class=" pt-4 overflow-hidden relative lg:flex lg:items-center">
-        <div class=" pt-10 w-1/2 px-4 lg:py-16 z-0 bg-black-tr rounded-lg m-3">
+        <div class=" pt-10 xl:w-1/2 px-4 lg:py-16 z-0 bg-black-tr rounded-lg m-3">
           <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
             <span class="block text-red-300 text-5xl">
               Gourmeth en Casa , Quito
@@ -24,7 +24,7 @@ export default function HeaderHome() {
             </div>
           </div>
         </div>
-        <div class="flex items-center px-4 p-50 w-1/2 gap-8 z-1">
+        <div class="flex items-center px-4 p-50 xl:w-1/2 gap-8 z-1">
           <img
             src="https://images.unsplash.com/photo-1598679253544-2c97992403ea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="w-1/2 rounded-lg"

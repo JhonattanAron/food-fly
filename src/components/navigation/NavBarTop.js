@@ -2,6 +2,7 @@ import React from "react";
 import ProfileButtonMenu from "./buttons/PrfileButton";
 import CarButtonMenu from "./buttons/CarButton";
 import HeartButtonMenu from "./buttons/HeartButton";
+import PopoverNav from "./Popover";
 
 function NavBarTop() {
   return (
@@ -13,7 +14,10 @@ function NavBarTop() {
             className="flex justify-between text-white bg-black"
           >
             <div className="py-6 flex w-full items-center">
-              <a className="text-3xl mx-auto font-bold font-heading" href="/">
+              <a
+                className="text-3xl xl:mx-auto ml-3 font-bold font-heading"
+                href="/"
+              >
                 <img className="h-9" src="logo.png" alt="logo" />
               </a>
               <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
@@ -64,21 +68,11 @@ function NavBarTop() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
               </span>
             </a>
-            <a className="navbar-burger self-center mr-12 xl:hidden" href="/#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 hover:text-gray-200"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+            <a
+              className="relative navbar-burger self-center mr-12 xl:hidden"
+              href="/#"
+            >
+              <PopoverNav />
             </a>
           </nav>
         </section>

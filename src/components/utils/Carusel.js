@@ -4,12 +4,21 @@ import CardMenu from "../menuPage/CardMenu";
 
 export default function Carusel() {
   const data = [
-    <CardMenu key={0} price="223" />,
-    <CardMenu key={1} price="898" />,
-    <CardMenu key={2} price="45" />,
-    <CardMenu key={3} price="3" />,
-    <CardMenu key={4} price="22" />,
-    // Añade más elementos según sea necesario
+    {
+      price: 19.99,
+      name: "Arroz con Pollo",
+      description: "Arron que lleva pollo",
+    },
+    {
+      price: 29.99,
+      name: "Encebollado",
+      description: "Arron que lleva pollo",
+    },
+    {
+      price: 39.99,
+      name: "Seco de Chancho",
+      description: "Arron que lleva pollo",
+    },
   ];
 
   const [currentIndex, setcurrentIndex] = useState(0);
@@ -28,20 +37,20 @@ export default function Carusel() {
 
   return (
     <div
-      className="relative"
+      className="xl:relative xl:visible invisible"
       style={{ width: "65vw", maxWidth: "65vw", margin: "0 auto" }}
     >
       <button
         onClick={handlePrev}
         className="bg-green-400 absolute left-1 p-3 text-white font-bold rounded-xl hover:bg-green-800 duration-100"
-        style={{ zIndex: 1 }}
+        style={{ zIndex: 4 }}
       >
         Prev
       </button>
       <button
         onClick={handleNext}
         className="bg-green-400 absolute right-1 p-3 text-white font-bold rounded-xl hover:bg-green-600 duration-100"
-        style={{ zIndex: 1 }}
+        style={{ zIndex: 4 }}
       >
         Next
       </button>
@@ -92,7 +101,11 @@ export default function Carusel() {
                     : "10%",
               }}
             >
-              {item}
+              <CardMenu
+                price={item.price}
+                name={item.name}
+                description={item.description}
+              />
             </motion.div>
           ))}
         </motion.div>
