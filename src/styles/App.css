@@ -7,9 +7,30 @@
     object-fit: cover;
     backdrop-filter: blur(5px); 
 }
-@media (max-width: 1024px) {
-    .absolute-min {
-        position: absolute ;
+
+/* TuComponente.css */
+@keyframes moverCirculo {
+    0% {
+      transform: translateX(200px);
+      opacity: 1;
     }
-}
+    100% {
+      transform: translateX(0px); 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+      opacity: 0;
+    }
+    
+  }
+  
+  .mover-circulo {
+    position: absolute;
+    top: 70%;
+    opacity: 0;
+    width: 50px; 
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;
+    animation: moverCirculo 3s ease-in-out; 
+  }
+  
 

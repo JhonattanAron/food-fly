@@ -51,83 +51,89 @@ export default function CombinedComponent() {
   };
 
   return (
-    <div className="flex align-middle justify-center">
-      <div>
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: "flex",
-            height: "auto",
-          }}
-        >
-          <div className="absolute -left-[120vh] lg:left-0 lg:relative z-20">
-            <Tabs
-              className="h-auto w-72 p-3 m-3 bg-black rounded-xl "
-              orientation="vertical"
-              value={value}
-              onChange={handleChange}
-              aria-label="Menu-Tab"
-              sx={{ borderRight: 1, borderColor: "divider" }}
-            >
-              <Tab
-                label="Menu"
-                {...a11yProps(0)}
-                style={{ color: "white", fontSize: "3rem" }}
-              />
-              <Tab
-                label="Entradas"
-                icon={<DinnerDiningIcon className="text-white" />}
-                {...a11yProps(1)}
-                style={{ color: "white" }}
-              />
-              <Tab
-                label="Comidas Rapidas"
-                icon={<FastfoodIcon className="text-white" />}
-                {...a11yProps(2)}
-                style={{ color: "white" }}
-              />
-              <Tab
-                label="Platos Fuertes"
-                icon={<TakeoutDiningIcon className="text-white" />}
-                {...a11yProps(3)}
-                style={{ color: "white" }}
-              />
-              <Tab
-                label="Menestras"
-                icon={<BrunchDiningIcon className="text-white" />}
-                {...a11yProps(4)}
-                style={{ color: "white" }}
-              />
-              <Tab
-                label="Platos a la Carta"
-                icon={<BrunchDiningIcon className="text-white" />}
-                {...a11yProps(5)}
-                style={{ color: "white" }}
-              />
-            </Tabs>
-          </div>
-          <div>
-            <TabPanel value={value} index={0}>
-              <MenuContFood />
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              Item Two
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-              Item Three
-            </TabPanel>
-            <TabPanel value={value} index={3}>
-              Item Four
-            </TabPanel>
-            <TabPanel value={value} index={4}>
-              Item Five
-            </TabPanel>
-            <TabPanel value={value} index={5}>
-              Item Six
-            </TabPanel>
-          </div>
-        </Box>
+    <>
+      <div className="flex align-middle justify-center">
+        <div>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              height: "auto",
+            }}
+          >
+            <div className="absolute  lg:left-0 lg:relative z-20">
+              <Tabs
+                className="h-auto xl:w-72 w-screen p-3 mt-4 xl:m-3 bg-black rounded-xl"
+                orientation={
+                  window.innerWidth >= 1280 ? "vertical" : "horizontal"
+                }
+                variant="scrollable"
+                value={value}
+                onChange={handleChange}
+                aria-label="Menu-Tab"
+                sx={{ borderRight: 1, borderColor: "divider" }}
+              >
+                <Tab
+                  label="Menu"
+                  {...a11yProps(0)}
+                  style={{ color: "white", fontSize: "3rem" }}
+                />
+                <Tab
+                  label="Entradas"
+                  icon={<DinnerDiningIcon className="text-white" />}
+                  {...a11yProps(1)}
+                  style={{ color: "white" }}
+                />
+                <Tab
+                  label="Comidas Rapidas"
+                  icon={<FastfoodIcon className="text-white" />}
+                  {...a11yProps(2)}
+                  style={{ color: "white" }}
+                />
+                <Tab
+                  label="Platos Fuertes"
+                  icon={<TakeoutDiningIcon className="text-white" />}
+                  {...a11yProps(3)}
+                  style={{ color: "white" }}
+                />
+                <Tab
+                  label="Menestras"
+                  icon={<BrunchDiningIcon className="text-white" />}
+                  {...a11yProps(4)}
+                  style={{ color: "white" }}
+                />
+                <Tab
+                  label="Platos a la Carta"
+                  icon={<BrunchDiningIcon className="text-white" />}
+                  {...a11yProps(5)}
+                  style={{ color: "white" }}
+                />
+              </Tabs>
+              <div className="mover-circulo"></div>
+            </div>
+            <div className="pt-[7rem] xl:pt-0">
+              <TabPanel value={value} index={0}>
+                <MenuContFood />
+              </TabPanel>
+              <TabPanel value={value} index={1}>
+                <MenuContFood />
+              </TabPanel>
+              <TabPanel value={value} index={2}>
+                <MenuContFood />
+              </TabPanel>
+              <TabPanel value={value} index={3}>
+                <MenuContFood />
+              </TabPanel>
+              <TabPanel value={value} index={4}>
+                <MenuContFood />
+              </TabPanel>
+              <TabPanel value={value} index={5}>
+                <MenuContFood />
+              </TabPanel>
+            </div>
+          </Box>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
