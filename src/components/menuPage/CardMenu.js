@@ -1,6 +1,6 @@
 export default function CardMenu(props) {
   return (
-    <div class="xl:w-[30rem] h-[16rem] flex  overflow-hidden drop-shadow-2xl bg-white rounded-lg shadow-lg">
+    <div class="xl:w-[25rem] h-[16rem] flex  overflow-hidden drop-shadow-2xl bg-white rounded-lg shadow-lg">
       <div class="w-1/3 bg-cover flex justify-center align-middle ">
         <img
           src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

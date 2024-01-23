@@ -4,7 +4,7 @@ import SimpleCarousel from "../utils/SimpleCarusel";
 export default function MenuContFood() {
   return (
     <>
-      <div className="bg-black rounded-xl w-[89vw] h-[100vh]  flex flex-col xl:w-[72vw] xl:h-[80vh]">
+      <div className="bg-black  rounded-xl w-[89vw]   flex flex-col xl:w-[72vw] xl:h-[150vh]">
         <h1 className="text-white text-center uppercase text-4xl p-4">
           Nivel 1
         </h1>
